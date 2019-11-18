@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>CDT 2020</title>
+<title><a href="www.cdt2020.com">CDT 2020</a></title>
 <meta charset="UTF-8">
 <meta name="author" content="Shepherd and Teacher">
 <meta name="description" content="Follow us as we travel southbound on the CDT!">
@@ -71,13 +71,13 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "CDT Day 1!";
+    document.getElementById("countdown").innerHTML = "CDT Day 1!";
   }
 }, 1000);
 </script>
